@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Md. Talal Wasim | Portfolio </title>
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
     <link rel="icon" type="image" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     
@@ -20,15 +19,74 @@
 
 
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 
 
-        <script src="https://cdn.jsdelivr.net/github-calendar/1.2.0/github-calendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/github-calendar/1.2.0/github-calendar.min.js"></script>
 
 
+
+
+
+<style>
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+ /* On hover, add a black background color with a little bit see-through */
+/*.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}*/
+
+ /* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  /*background-color: #717171;*/
+  background-color: #F20359;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
 
    
 
@@ -46,8 +104,8 @@
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#project" class="menu-btn">Projects</a></li>
+                <li><a href="#certificateSection" class="menu-btn">Achivements</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                
                 
                 <li ></li><a class="resume_navigation"  href="images\Md_Talal_Wasim.pdf" target="_blank">Resume</a> </li>
             </ul>
@@ -359,11 +417,11 @@
 
     <center>
      <div>
-    <div class="calendarWasim">
+        <div class="calendarWasim">
         <!-- Loading stuff -->
         
-      <!-- <a href="https://github.com/mdtalalwasim" />   -->
-      </div>
+        <!-- <a href="https://github.com/mdtalalwasim" />   -->
+        </div>
 
       
 
@@ -383,6 +441,92 @@
 </a>
 </p>
    </section>
+
+
+   <!-- wasim new section implemetation -->
+   <section class="certificateSection" id="certificateSection"> 
+                <h2 class="title">Certificate & Achivements </h2>
+    <center>
+        <div class="slideshow-container">
+
+           
+          
+          <div class="mySlides fade">
+              <div class="numbertext" style="color: #4EB969;">1 / 5</div>
+              <div class="row certificateShadow">
+                  <a href="images/certificates/Md Talal Wasim-HackerRank.png" target="_blank"><img src="images/certificates/Md Talal Wasim-HackerRank.png" style="width:100%; height:100%;"></a>
+              </div>
+              <div class="text certiProvider" style="margin-bottom: 20px; color: #4EB969;"><b>HackerRank</div>
+              
+              
+          </div>
+          
+          <div class="mySlides fade">
+              <div class="numbertext" style="color:#0074B1;">2 / 5</div>
+              <div class="row certificateShadow">
+                  <a href="images/certificates/Learning-Java-LinkedIn-1661355714285.png" target="_blank"><img src="images/certificates/Learning-Java-LinkedIn-1661355714285.png" style="width:100%; height:100%;"></a>
+              </div>
+              <div class="text certiProvider" style="margin-bottom: 20px; color:#0074B1;"><b>LinkedIn</div>
+              
+              
+          </div>
+
+          
+         <div class="mySlides fade">
+              <div class="numbertext" style="color:#F20359;">3 / 5</div>
+              <div class="row certificateShadow">
+                  <a href="images/certificates/Java-Sololearn-cert-CT-QDMMUPHA.png" target="_blank"><img src="images/certificates/Java-Sololearn-cert-CT-QDMMUPHA.png" style="width:100%; height:100%;"></a>
+                  
+              </div>
+              <div class="text certiProvider" style="margin-bottom: 20px; color:#F20359;"><b>SoloLearn</div>
+              
+              
+          </div>
+          
+
+
+          
+         <div class="mySlides fade">
+              <div class="numbertext" style="color:#0074B1;">4 / 5</div>
+              <div class="row certificateShadow">
+                  <a href="images/certificates/Database-LinkedIn.png" target="_blank"><img src="images/certificates/Database-LinkedIn.png" style="width:100%; height:100%;"></a>
+              </div>
+              <div class="text certiProvider" style="margin-bottom: 20px; color:#0074B1;"><b>LinkedIn</div>
+              
+              
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext" style="color:#0074B1;">5 / 5</div>
+              <div class="row certificateShadow">
+                  <a href="images/certificates/Cisco Cyber Security.png" target="_blank"><img src="images/certificates/Cisco Cyber Security.png" style="width:100%; height:100%;"></a>
+              </div>
+              <div class="text certiProvider" style="margin-bottom: 20px; color:#0074B1;"><b>Cisco</div>
+              
+              
+          </div>
+         
+
+          <!-- <a class="prev" style="color:#64C9E9;" onclick="plusSlides(-1)">❮</a>
+          <a class="next" style="color:#64C9E9;" onclick="plusSlides(1)">❯</a> -->
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span> 
+      </div>
+
+  </center>
+
+
+ </section>
+   
+<!-- new section impl -->
 
     
 
@@ -483,6 +627,7 @@
     <script src="script.js"></script>
 
 
+    <!-- script for footer date -->
     <script>
         // Get the current year
         const currentYear = new Date().getFullYear();
@@ -490,5 +635,38 @@
         // Update the copyright year in the HTML
         document.getElementById("copyright-year").textContent = `Md.Talal Wasim - ${currentYear}`;
     </script>
+    <!-- script for footer date time -->
+
+ 
+<!-- script for certificate of Achivements -->
+ <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- script for certificate of Achivements -->
 </body>
 </html>
