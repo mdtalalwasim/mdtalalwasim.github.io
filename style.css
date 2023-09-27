@@ -834,6 +834,17 @@ section .title::after {
   color: #ffcc00;
   background: none;
 }
+
+
+/*visitor counter*/
+.counter .title::after {
+  content: "Website Visitor";
+ 
+}
+/*visitor counter*/
+
+
+
 /* footer section styling */
 footer {
   background: #111;
