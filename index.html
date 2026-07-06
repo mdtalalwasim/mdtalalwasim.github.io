@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Talal Wasim | Full Stack Java Spring Boot Engineer</title>
+  <meta name="description" content="Portfolio of Md. Talal Wasim — Full Stack Java Spring Boot Software Engineer. Building scalable web applications, REST APIs, and microservices." />
+  <meta name="author" content="Md. Talal Wasim" />
+  <meta property="og:title" content="Md. Talal Wasim | Full Stack Java Spring Boot Engineer" />
+  <meta property="og:description" content="Full Stack Software Engineer specializing in Java, Spring Boot, REST APIs, and microservices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mdtalalwasim.github.io/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">TW</span>
+        <span class="logo-text">Talal<span class="accent">.</span>dev</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal"><span class="wave">👋</span> Hello, I'm</p>
+        <h1 class="hero-name reveal">Md. Talal <span class="gradient-text">Wasim</span></h1>
+        <h2 class="hero-role reveal">I'm a <span class="typed-text" id="typedText"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc reveal">
+          A passionate Full Stack Software Engineer with a strong foundation in both
+          front-end and back-end development. I build scalable applications,
+          robust REST APIs, and clean microservice architectures with Java &amp; Spring Boot.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View My Work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="images/Md_Talal_Wasim.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download CV
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          </a>
+        </div>
+        <div class="hero-socials reveal">
+          <a href="https://github.com/mdtalalwasim" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mdtalalwasim/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1zm1.8 13.1H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7z"/></svg>
+          </a>
+          <a href="mailto:md.talalwasim@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="avatar-ring">
+          <img src="images/Md_Talal_Wasim.jpeg"
+               onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/mdtalalwasim';"
+               alt="Md. Talal Wasim" class="avatar" />
+        </div>
+        <div class="floating-badge badge-java">☕ Java</div>
+        <div class="floating-badge badge-spring">🍃 Spring Boot</div>
+        <div class="floating-badge badge-api">⚡ REST API</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-card reveal">
+        <span class="stat-number" data-count="57">0</span><span class="stat-plus">+</span>
+        <p>Public Repositories</p>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-number" data-count="180">0</span><span class="stat-plus">+</span>
+        <p>GitHub Stars Earned</p>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+        <p>Certifications</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// About Me</p>
+        <h2 class="section-title">Get to <span class="gradient-text">Know Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card code-window reveal">
+          <div class="code-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">TalalWasim.java</span>
+          </div>
+          <pre class="code-body"><code><span class="kw">public class</span> <span class="cls">TalalWasim</span> {
+  <span class="kw">private</span> String role = <span class="str">"Full Stack Engineer"</span>;
+  <span class="kw">private</span> String core = <span class="str">"Java + Spring Boot"</span>;
+  <span class="kw">private</span> String city = <span class="str">"Dhaka, Bangladesh"</span>;
+
+  <span class="kw">public</span> String[] passions() {
+    <span class="kw">return new</span> String[] {
+      <span class="str">"Scalable Applications"</span>,
+      <span class="str">"Clean REST APIs"</span>,
+      <span class="str">"Microservices"</span>,
+      <span class="str">"Team Leadership"</span>
+    };
+  }
+}</code></pre>
+        </div>
+
+        <div class="about-text reveal">
+          <h3>Full Stack Java Spring Boot Software Engineer</h3>
+          <p>
+            I'm a passionate software engineer who loves turning complex problems into
+            simple, elegant solutions. With a strong foundation in both front-end and
+            back-end development, I specialize in building scalable, production-ready
+            applications with the <strong>Java &amp; Spring ecosystem</strong>.
+          </p>
+          <p>
+            From designing clean REST APIs and microservice architectures to crafting
+            responsive user interfaces, I enjoy owning the full development lifecycle.
+            I'm team-oriented, thrive on collaboration, and bring leadership to every
+            project I work on.
+          </p>
+          <ul class="about-facts">
+            <li><span>📍</span> Dhaka, Bangladesh</li>
+            <li><span>💼</span> Software Engineer @ atB Lab Limited</li>
+            <li><span>📧</span> md.talalwasim@gmail.com</li>
+            <li><span>🎓</span> MSc in CSE, Jahangirnagar University</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Let's Talk
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// Where I've Worked</p>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Software Engineer <span class="current-badge">Current</span></h3>
+              <span class="timeline-date">May 2026 — Present</span>
+            </div>
+            <p class="timeline-company">atB Lab Limited <span class="timeline-note">· Japanese multinational company · Full-time · Dhaka, Bangladesh · Hybrid</span></p>
+            <p class="timeline-desc">
+              Working as a Software Engineer at <strong>atB Lab Limited</strong>, a Japanese
+              multinational technology company — building and maintaining backend services
+              with Java &amp; Spring Boot in a hybrid work environment.
+            </p>
+            <div class="project-tags">
+              <span>Java</span><span>Spring Boot</span><span>Backend Development</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Software Engineer</h3>
+              <span class="timeline-date">Nov 2025 — May 2026</span>
+            </div>
+            <p class="timeline-company">Unisoft System Limited <span class="timeline-note">· a concern of Smart Technologies (BD) Ltd. · Dhaka</span></p>
+            <p class="timeline-desc">
+              Building the <strong>Collection &amp; Recovery Management System (CRMS)</strong> for
+              Prime Bank. Developing and maintaining backend services with Java &amp; Spring Boot in
+              a microservices architecture — REST APIs for loan, recovery, and collection modules,
+              service-to-service integration, and PostgreSQL query optimization for financial workflows.
+            </p>
+            <div class="project-tags">
+              <span>Java</span><span>Spring Boot</span><span>Microservices</span><span>PostgreSQL</span><span>REST API</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Java Backend Engineer</h3>
+              <span class="timeline-date">Nov 2025 — May 2026</span>
+            </div>
+            <p class="timeline-company">Taghyeer Technologies <span class="timeline-note">· Dhaka</span></p>
+            <p class="timeline-desc">
+              Maintaining and enhancing <strong>10+ production microservices</strong> (User Profile,
+              Wallet, Subscription, IAM, Gateway, Billing, and more) for the Dream Emirates platform —
+              built with Spring Boot REST &amp; WebFlux. Kafka-based event-driven communication,
+              Docker deployments for staging and production, and AWS CI/CD with EC2, S3,
+              RDS (PostgreSQL), Secrets Manager, ECR, CodeBuild &amp; CodePipeline.
+            </p>
+            <div class="project-tags">
+              <span>Spring WebFlux</span><span>Apache Kafka</span><span>AWS</span><span>Docker</span><span>CI/CD</span><span>Redis</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Software Engineer</h3>
+              <span class="timeline-date">Jan 2023 — Mar 2025</span>
+            </div>
+            <p class="timeline-company">INOVEX IDEA SOLUTION LIMITED <span class="timeline-note">· Dhaka</span></p>
+            <p class="timeline-desc">
+              Built the backend of an enterprise <strong>Mobile Device Management (MDM)</strong>
+              platform managing <strong>120,000+ devices</strong>. Secure RESTful APIs with Spring Boot,
+              Spring Security &amp; MySQL; JPQL and native-query performance tuning; real-time
+              device communication via Firebase Cloud Messaging and Google Pub/Sub; and Google
+              Android Management API integration for device policies, remote actions, content
+              sharing, and location tracking.
+            </p>
+            <div class="project-tags">
+              <span>Spring Security</span><span>MySQL</span><span>FCM</span><span>Google Pub/Sub</span><span>REST API</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// Academic Background</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <div class="timeline-head">
+              <h3>MSc in Computer Science &amp; Engineering</h3>
+              <span class="timeline-date">2019</span>
+            </div>
+            <p class="timeline-company">Jahangirnagar University <span class="timeline-note">· Dhaka, Bangladesh</span></p>
+            <p class="timeline-desc">CGPA: 3.48 — Postgraduate study deepening fundamentals in algorithms, distributed systems, and software architecture.</p>
+          </div>
+        </article>
+
+        <article class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <div class="timeline-head">
+              <h3>BSc in Computer Science &amp; Engineering</h3>
+              <span class="timeline-date">2017</span>
+            </div>
+            <p class="timeline-company">American International University–Bangladesh (AIUB) <span class="timeline-note">· Dhaka, Bangladesh</span></p>
+            <p class="timeline-desc">CGPA: 3.63 — Core foundation in programming, databases, and web engineering, where I started shipping real projects to GitHub.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// My Toolbox</p>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+      </div>
+
+      <div class="skills-groups">
+        <div class="skill-group reveal">
+          <h3><span class="group-icon">⚙️</span> Languages &amp; Frameworks</h3>
+          <div class="skill-chips">
+            <span class="chip">Java SE / EE</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">Spring WebFlux</span>
+            <span class="chip">Spring Data JPA</span>
+            <span class="chip">Spring Security</span>
+            <span class="chip">Hibernate</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">REST API</span>
+            <span class="chip">Servlet &amp; JSP</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="group-icon">📨</span> Messaging &amp; Resilience</h3>
+          <div class="skill-chips">
+            <span class="chip">Apache Kafka</span>
+            <span class="chip">Resilience4j (Circuit Breaker &amp; Retry)</span>
+            <span class="chip">ShedLock</span>
+            <span class="chip">Firebase Cloud Messaging</span>
+            <span class="chip">Google Pub/Sub</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="group-icon">🗄️</span> Databases &amp; Caching</h3>
+          <div class="skill-chips">
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Redis</span>
+            <span class="chip">JPQL &amp; Native Queries</span>
+            <span class="chip">Database Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="group-icon">☁️</span> Cloud &amp; DevOps</h3>
+          <div class="skill-chips">
+            <span class="chip">AWS EC2</span>
+            <span class="chip">AWS S3</span>
+            <span class="chip">AWS RDS</span>
+            <span class="chip">AWS ECR</span>
+            <span class="chip">CodeBuild &amp; CodePipeline</span>
+            <span class="chip">Secrets Manager</span>
+            <span class="chip">Docker</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="group-icon">🎨</span> Frontend &amp; Web</h3>
+          <div class="skill-chips">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Bootstrap 5</span>
+            <span class="chip">Thymeleaf</span>
+            <span class="chip">jQuery / Ajax</span>
+            <span class="chip">JSON</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3><span class="group-icon">🧰</span> Tools</h3>
+          <div class="skill-chips">
+            <span class="chip">Git &amp; GitHub</span>
+            <span class="chip">Bitbucket</span>
+            <span class="chip">Postman</span>
+            <span class="chip">Swagger UI</span>
+            <span class="chip">JWT</span>
+            <span class="chip">Apache Tomcat</span>
+            <span class="chip">Maven</span>
+            <span class="chip">IntelliJ IDEA</span>
+            <span class="chip">Spring Tool Suite</span>
+            <span class="chip">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// What I Do</p>
+        <h2 class="section-title">Services I <span class="gradient-text">Provide</span></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3>Full Stack Web Development</h3>
+          <p>End-to-end web applications — from responsive, pixel-perfect frontends to robust Java Spring Boot backends.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🔌</div>
+          <h3>REST API Development</h3>
+          <p>Clean, well-documented, secure REST APIs built with Spring Boot, tested with Postman, and documented with Swagger.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🧩</div>
+          <h3>Microservices Architecture</h3>
+          <p>Scalable, independently deployable microservices designed with Spring Cloud patterns for growing systems.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🗃️</div>
+          <h3>Database Design</h3>
+          <p>Efficient relational schemas and optimized queries with MySQL, JPA, and Hibernate for reliable data layers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// My Work</p>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-pro reveal">
+          <div class="project-top">
+            <div class="folder-icon">🏢</div>
+            <div class="project-links">
+              <span class="star-badge pro-badge">💼 Professional</span>
+            </div>
+          </div>
+          <h3>Dream Emirates — Microservices Ecosystem</h3>
+          <p>Backend engineering on 10+ production microservices (User Profile, Wallet, Subscription, IAM, Gateway, Billing…) — Kafka event-driven communication, Redis caching, Resilience4j fault tolerance, ShedLock schedulers, and AWS CI/CD deployments.</p>
+          <div class="project-tags">
+            <span>Spring Boot · WebFlux</span><span>Kafka</span><span>Redis</span><span>Resilience4j</span><span>AWS</span>
+          </div>
+        </article>
+
+        <article class="project-card project-pro reveal">
+          <div class="project-top">
+            <div class="folder-icon">🏢</div>
+            <div class="project-links">
+              <span class="star-badge pro-badge">💼 Professional</span>
+            </div>
+          </div>
+          <h3>MobiManager — Mobile Device Management</h3>
+          <p>Enterprise MDM solution managing 120,000+ devices — RESTful APIs for device policies, remote actions, and app installations, with real-time monitoring via an integrated Android MDM Agent app.</p>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>Spring Security</span><span>FCM</span><span>MySQL</span><span>Android MDM</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links">
+              <span class="star-badge">⭐ 123</span>
+              <a href="https://github.com/mdtalalwasim/Doctor-Patient-Portal-AdvanceJavaWebProject" target="_blank" rel="noopener" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Doctor Patient Portal</h3>
+          <p>A multi-panel healthcare system (Admin, Doctor, Patient) enabling online appointment booking, doctor management, and patient records.</p>
+          <div class="project-tags">
+            <span>Java EE</span><span>JSP · Servlet</span><span>Bootstrap 5</span><span>MySQL</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links">
+              <a href="https://github.com/mdtalalwasim/blog-application-spring-boot-rest-api" target="_blank" rel="noopener" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Blogging Application — REST API</h3>
+          <p>A production-style blogging REST API with full CRUD operations, layered architecture, and interactive API documentation.</p>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>Spring Data JPA</span><span>Hibernate</span><span>Swagger UI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links">
+              <span class="star-badge">⭐ 21</span>
+              <a href="https://github.com/mdtalalwasim/Ecommerce_Store" target="_blank" rel="noopener" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>E-commerce Store</h3>
+          <p>A complete e-commerce platform with product catalog, cart, and order management built on Spring Boot MVC with Thymeleaf.</p>
+          <div class="project-tags">
+            <span>Spring Boot MVC</span><span>Thymeleaf</span><span>MySQL</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links">
+              <a href="https://github.com/mdtalalwasim/MicroserviceHotelRatingProject" target="_blank" rel="noopener" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Hotel Rating — Microservices</h3>
+          <p>A microservice-based hotel rating system demonstrating service discovery, inter-service communication, and distributed architecture.</p>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>Microservices</span><span>Spring Cloud</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links">
+              <a href="https://github.com/mdtalalwasim/TechDiary" target="_blank" rel="noopener" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Tech Diary</h3>
+          <p>A full-featured technology blog platform with post management, comments, and dynamic content loading via Ajax.</p>
+          <div class="project-tags">
+            <span>JSP · Servlet</span><span>Ajax</span><span>Bootstrap 5</span><span>MySQL</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links">
+              <a href="https://github.com/mdtalalwasim/REST-API-CRUD-JQuery-Ajax" target="_blank" rel="noopener" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Student Registration System</h3>
+          <p>A REST API with complete CRUD operations and a dynamic jQuery/Ajax frontend for real-time student record management.</p>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>Spring Data JPA</span><span>jQuery · Ajax</span><span>MySQL</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="center reveal">
+        <a href="https://github.com/mdtalalwasim?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+          Explore All 57+ Repositories
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// Milestones</p>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Certifications</span></h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏅</div>
+          <h3>HackerRank</h3>
+          <p>Java &amp; Problem Solving certifications</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">💼</div>
+          <h3>LinkedIn Learning</h3>
+          <p>Java Development &amp; Database courses</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🛡️</div>
+          <h3>Cisco</h3>
+          <p>Introduction to Cyber Security</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎓</div>
+          <h3>Great Learning</h3>
+          <p>Software development courses</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">📜</div>
+          <h3>SoloLearn</h3>
+          <p>Programming language certifications</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🚀</div>
+          <h3>Udemy &amp; Mind Luster</h3>
+          <p>Full stack development courses</p>
+        </div>
+      </div>
+
+      <div class="center reveal">
+        <a href="https://github.com/mdtalalwasim/My-Certification-and-Achivements" target="_blank" rel="noopener" class="btn btn-outline">
+          View All Certificates
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GITHUB ACTIVITY ============ -->
+  <section class="section section-alt" id="github">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// Open Source</p>
+        <h2 class="section-title">GitHub <span class="gradient-text">Activity</span></h2>
+      </div>
+      <div class="gh-contrib reveal">
+        <p class="gh-contrib-label">A year of contributions</p>
+        <img src="https://ghchart.rshah.org/6366f1/mdtalalwasim" alt="GitHub contribution chart" loading="lazy"
+             onerror="this.parentElement.style.display='none'" />
+      </div>
+      <div class="github-stats reveal">
+        <img src="https://github-readme-stats.vercel.app/api?username=mdtalalwasim&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" alt="GitHub Stats" loading="lazy"
+             onerror="this.style.display='none'" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mdtalalwasim&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" alt="Top Languages" loading="lazy"
+             onerror="this.style.display='none'" />
+      </div>
+      <div class="center reveal">
+        <a href="https://github.com/mdtalalwasim" target="_blank" rel="noopener" class="btn btn-outline">
+          Visit my GitHub profile
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">// Get In Touch</p>
+        <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+        <p class="section-sub">Have a project in mind or an opportunity to discuss? My inbox is always open.</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:md.talalwasim@gmail.com" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </div>
+          <h3>Email</h3>
+          <p>md.talalwasim@gmail.com</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mdtalalwasim/" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1zm1.8 13.1H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7z"/></svg>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>in/mdtalalwasim</p>
+        </a>
+
+        <a href="https://github.com/mdtalalwasim" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          </div>
+          <h3>GitHub</h3>
+          <p>@mdtalalwasim</p>
+        </a>
+
+        <a href="tel:+8801776829136" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
+          </div>
+          <h3>Phone / WhatsApp</h3>
+          <p>+880 1776-829136</p>
+        </a>
+
+        <div class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Location</h3>
+          <p>Nikunja 2, Khilkhet, Dhaka</p>
+        </div>
+      </div>
+
+      <div class="center reveal">
+        <a href="mailto:md.talalwasim@gmail.com" class="btn btn-primary btn-lg">
+          Say Hello 👋
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">TW</span>
+        <span class="logo-text">Talal<span class="accent">.</span>dev</span>
+      </a>
+      <p>Designed &amp; built with ❤️ by Md. Talal Wasim · © <span id="year"></span></p>
+      <div class="footer-socials">
+        <a href="https://github.com/mdtalalwasim" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mdtalalwasim/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1zm1.8 13.1H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7z"/></svg>
+        </a>
+        <a href="mailto:md.talalwasim@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
