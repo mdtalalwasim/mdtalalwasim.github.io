@@ -44,7 +44,7 @@ navLinks.querySelectorAll("a").forEach((link) =>
 
 // ---------- Typing animation ----------
 const roles = [
-  "Full Stack Developer",
+  "Software Engineer",
   "Java Spring Boot Engineer",
   "Java Backend Engineer",
   "Microservices Developer",

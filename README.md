@@ -10,7 +10,7 @@ Built with plain **HTML + CSS + JavaScript** — no build step, no frameworks.
 - Animated hero with typing effect, floating tech badges, and glowing orbs
 - Scroll-reveal animations and animated stat counters
 - Fully responsive (mobile hamburger menu, fluid grids)
-- Sections: Home · About · Skills · Services · Projects · Achievements · GitHub Activity · Contact
+- Sections: Home · About · Experience · Education · Skills · Services · Projects · Achievements · GitHub Activity · Contact
 - Live GitHub stats cards
 - Respects `prefers-reduced-motion`
 
@@ -28,7 +28,7 @@ images/           — profile photo + resume (copy from old repo, see below)
 Copy these two files from the old repository into an `images/` folder here
 (the site links to them):
 
-- `images/Md_Talal_Wasim.jpeg` — profile photo (falls back to your GitHub avatar if missing)
+- `images/profile.jpeg` — profile photo (falls back to your GitHub avatar if missing)
 - `images/Md_Talal_Wasim.pdf` — resume ("Download CV" button)
 
 ## Deploy to GitHub Pages
